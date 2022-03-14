@@ -42,6 +42,7 @@ class PedersenHasher(object):
         if segments:
             self.segments = segments
             self.is_sized = True
+            self.generators = self.__gen_generators()
         else:
             self.is_sized = False
 
